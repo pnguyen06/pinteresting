@@ -81,4 +81,7 @@ Pinteresting::Application.configure do
   # Required for Heroku
   # Note to set this to your actual host
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  # Paperclip ImageMagick fix
+  Paperclip.options[:command_path]="/opt/ImageMagick/bin/"
 end
